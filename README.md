@@ -1,51 +1,37 @@
-# FastAPI Starter
+# ⚡ FastAPI on Vercel — Starter
 
-Deploy your [FastAPI](https://fastapi.tiangolo.com/) project to Vercel with zero configuration.
+> Minimal FastAPI service configured for zero-config serverless deployment on Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/fastapi&template=fastapi)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-_Live Example: https://vercel-plus-fastapi.vercel.app/_
+**🌐 Live:** [fastapi-nine-sable.vercel.app](https://fastapi-nine-sable.vercel.app)
 
-Visit the [FastAPI documentation](https://fastapi.tiangolo.com/) to learn more.
-
-## Getting Started
-
-Install the required dependencies:
+## 🚀 Run locally
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install .
+git clone https://github.com/optimus-node-js/fastapi.git
+cd fastapi
 ```
-
-Or, if using [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv sync
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload --port 5001
 ```
 
+Deploy with `vercel --prod`.
 
-## Running Locally
+_Bootstrapped from Vercel's FastAPI example._
 
-Start the development server on http://0.0.0.0:5001
+---
 
-```bash
-python main.py
-# using uv:
-uv run main.py
-```
+## 👤 Author
 
-When you make changes to your project, the server will automatically reload.
+**Rahul Vishwakarma** — Senior Full Stack Developer · Ahmedabad, India
 
-## Deploying to Vercel
+[![Portfolio](https://img.shields.io/badge/Portfolio-rahul--vishwakarma--portfolio.vercel.app-0A66C2?style=flat-square&logo=vercel&logoColor=white)](https://rahul-vishwakarma-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rahul%20Vishwakarma-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rahul-vishwakarma-101346192)
+[![Email](https://img.shields.io/badge/Email-karmarahul67%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:karmarahul67@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-optimus--node--js-181717?style=flat-square&logo=github)](https://github.com/optimus-node-js)
 
-Deploy your project to Vercel with the following command:
-
-```bash
-npm install -g vercel
-vercel --prod
-```
-
-Or `git push` to your repository with our [git integration](https://vercel.com/docs/deployments/git).
-
-To view the source code for this template, [visit the example repository](https://github.com/vercel/vercel/tree/main/examples/fastapi).
+If you find this project useful, consider giving it a ⭐.
